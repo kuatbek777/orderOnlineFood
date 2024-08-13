@@ -1,0 +1,140 @@
+.main-poster {
+    background: url("../images/background.png");
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .content {
+        max-width: 716px;
+        color: var(--Text);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        .sub-title {
+            display: flex;
+            margin-bottom: 8px;
+
+            .sub-title-text {
+                font-family: 'Cormorant Garamond';
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: center;
+                padding: 0px 12px;
+                color: var(--Primary);
+            }
+        }
+        
+        .title {
+            font-family: 'Cormorant Garamond';
+            font-size: 96px;
+            font-weight: 500;
+            line-height: 96px;
+            letter-spacing: -0.035em;
+            text-align: center;
+        }
+
+        .description {
+            font-size: 20px;
+            font-family: 'Jost';
+            font-weight: 400;
+            line-height: 28px;
+            margin: 32px 4px;
+        }
+
+        .btn-shop-now {
+            padding: 16px 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--Decoration);
+            border: 1px solid var(--Primary);
+            
+            .btn-shop-now-text {
+                font-family: 'Jost';
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                margin-right: 12px;
+                text-shadow: 2px 2px #F9EFE0;
+            }
+        }
+
+        .btn-shop-now:hover {
+            cursor: pointer;
+            background: var(--BackgroundHover);
+        }
+    }
+
+    .bg-food {
+        position: absolute;
+    }
+
+    #bg-item-1 {
+        left: 0;
+        top: 0;
+    }
+
+    #bg-item-2 {
+        top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    #bg-item-3 {
+        right: 0;
+        top: 0;
+    }
+
+    #bg-item-4 {
+        right: 0;
+        bottom: 0;
+    }
+
+    #bg-item-5 {
+        left: 0;
+        bottom: 0;
+    }
+
+    .order-now-wrapper {
+        position: absolute;
+        top: 157px;
+        right: 0px;
+        border: 2px 0px 2px 2px;
+        border-style: dashed;
+        border-color: var(--Decoration);
+        
+        .order-now{
+            writing-mode: vertical-rl;
+            transform: rotate(-180deg);
+            width: 48px;
+            height: 153px;
+            background: var(--Decoration);
+            font-family: 'Lusitana';
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--Primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .order-now-wrapper:hover {
+        cursor: pointer;
+        background: var(--BackgroundHover);
+    }
+}

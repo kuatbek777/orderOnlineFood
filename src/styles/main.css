@@ -1,0 +1,14 @@
+:root {
+    --Text: #231F20;
+    --Primary: #CF8C0B;
+    --Decoration: #CF8C0B1A;
+    --Background: #F9EFE0;
+    --Default: #000000;
+    --BackgroundHover: #cf8c0b33;
+
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}

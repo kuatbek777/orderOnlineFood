@@ -1,0 +1,114 @@
+.header {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    .logo {
+        padding: 0px 80px 0px 64px;
+    }
+
+    .navbar {
+        display: flex;
+        padding: 24px 0px;
+        font-family: "Lusitana", serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.035em;
+        height: fit-content;
+
+        .navbar-item {
+            margin-right: 48px;
+            text-shadow: 2px 2px #F9EFE0;
+            cursor: pointer;
+        }
+
+        .navbar-item:hover {
+            color: var(--Primary);
+        }
+    }
+
+    .basket-wrapper {
+        border: 2px dashed white;
+        margin-left: auto;
+        margin-right: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        position: relative;
+
+        .basket {
+            width: 44px;
+            height: 44px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .basket-count {
+            background: var(--Text);
+            color: white;
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-family: 'Lusitana';
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.035em;
+            text-align: center;
+        }
+    }
+
+    .content {
+        max-width: 716px;
+        color: var(--Text);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .title {
+            font-size: 96px;
+            font-family: 'Cormorant Garamond';
+        }
+
+        .description {
+            font-size: 20px;
+            font-family: 'Jost';
+            font-weight: 400;
+            line-height: 28px;
+            margin: 32px 4px;
+        }
+
+        .btn-shop-now {
+            padding: 16px 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--Decoration);
+            border: 1px solid var(--Primary);
+            
+            .btn-shop-now-text {
+                font-family: 'Jost';
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 28px;
+                margin-right: 12px;
+                text-shadow: 2px 2px #F9EFE0;
+            }
+        }
+    }
+
+    .bg-food {
+        position: absolute;
+    }
+}
